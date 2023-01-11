@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FixYTPlayer
 // @namespace    https://github.com/kairi003/
-// @version      1.0
+// @version      1.1
 // @description  Fix an YouTube player on window.
 // @author       kairi003
 // @match        https://www.youtube.com/watch?v=*
@@ -13,9 +13,9 @@
 
 {
   // Define constants
-  const SUFFIX = '_FixYTPlayer';
-  const PIN_ID = 'pin' + SUFFIX;
-  const FIXED_CLS = 'fixed' + SUFFIX;
+  const SUFFIX = "_FixYTPlayer";
+  const PIN_ID = "pin" + SUFFIX;
+  const FIXED_CLS = "fixed" + SUFFIX;
 
   // Insert the static style tag
   document.head.insertAdjacentHTML(
@@ -72,13 +72,9 @@
   // Insert the dynamic style tag
   const dynamicStyle = document.createElement("style");
   document.head.appendChild(dynamicStyle);
-  
+
   // Set fixed status from localStorage
   document.body.classList.toggle(FIXED_CLS, +localStorage[FIXED_CLS]);
-  window.addEventListener("storage", (event) => {
-    if (event.key == FIXED_CLS)
-      document.body.classList.toggle(FIXED_CLS, +event.newValue);
-  });
 
   // Create the pin element
   const pin = document.createElement("div");
