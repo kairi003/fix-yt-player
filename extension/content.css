@@ -24,7 +24,7 @@
   opacity: 0;
 }
 
-body.fixed_FixYTPlayer #pin_FixYTPlayer {
+.fixed_FixYTPlayer #pin_FixYTPlayer {
   fill: #fff;
   stroke: #777;
 }
@@ -33,26 +33,26 @@ body.fixed_FixYTPlayer #pin_FixYTPlayer {
   filter: brightness(1.2);
 }
 
-body.fixed_FixYTPlayer #player-theater-container {
+.fixed_FixYTPlayer #player-theater-container {
   position: fixed !important;
   z-index: 10000;
 }
 
-body.fixed_FixYTPlayer #player {
+.fixed_FixYTPlayer #player {
   position: fixed !important;
   height: var(--fytp-player-height);
   width: var(--fytp-primary-colomn-width);
   z-index: 10000;
 }
 
-body.fixed_FixYTPlayer #below {
+.fixed_FixYTPlayer #below {
   padding-top: var(--fytp-player-height);
 }
 
-body.fixed_FixYTPlayer ytd-watch-flexy[theater] #below {
+.fixed_FixYTPlayer ytd-watch-flexy[theater] #below {
   padding-top: inherit;
 }
 
-body.fixed_FixYTPlayer ytd-watch-flexy[theater] #columns {
+.fixed_FixYTPlayer ytd-watch-flexy[theater] #columns {
   padding-top: clamp(480px, 56.25vw, calc(100vh - 169px));
 }
