@@ -1,0 +1,56 @@
+#pin_FixYTPlayer {
+  display: block;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  z-index: 1200;
+
+  opacity: 1;
+  transition: all 0.3s;
+
+  fill: #999;
+  fill-opacity: .85;
+  stroke: #fff;
+  stroke-opacity: .85;
+  stroke-width: 4px;
+}
+
+.ytp-autohide #pin_FixYTPlayer {
+  opacity: 0;
+}
+
+body.fixed_FixYTPlayer #pin_FixYTPlayer {
+  fill: #fff;
+  stroke: #888;
+}
+
+#pin_FixYTPlayer:hover {
+  fill-opacity: .95;
+}
+
+body.fixed_FixYTPlayer #player-theater-container {
+  position: fixed !important;
+  z-index: 10000;
+}
+
+body.fixed_FixYTPlayer #player {
+  position: fixed !important;
+  height: var(--fytp-player-height);
+  width: var(--fytp-primary-colomn-width);
+  z-index: 10000;
+}
+
+body.fixed_FixYTPlayer #below {
+  padding-top: var(--fytp-player-height);
+}
+
+body.fixed_FixYTPlayer ytd-watch-flexy[theater] #below {
+  padding-top: inherit;
+}
+
+body.fixed_FixYTPlayer ytd-watch-flexy[theater] #columns {
+  padding-top: clamp(480px, 56.25vw, calc(100vh - 169px));
+}
