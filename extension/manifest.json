@@ -1,6 +1,6 @@
 {
   "name": "FixYTPlayer",
-  "description": "Fix YouTube player on window top",
+  "description": "Fix the YouTube player to the top of the window.",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["storage"],

@@ -52,7 +52,7 @@ const intervalID = setInterval(() => {
       attributes: true,
       attributeFilter: ["style"],
     });
-    callback([{ target: video }]);
+    mutationCallback([{ target: video }]);
     widthObserver.observe(primary);
     video.parentElement.insertBefore(pin, video);
   }
