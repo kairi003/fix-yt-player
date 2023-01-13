@@ -38,11 +38,13 @@ const resizeCallback = ([entry]) => {
 const widthObserver = new ResizeObserver(resizeCallback);
 
 // Wait until the video exists
+let /** @type {?HTMLElement} */ video, /** @type {?HTMLElement}*/ primary;
+//let primary;
 const intervalID = setInterval(() => {
-  const video = document.querySelector(
+  video ??= document.querySelector(
     "#player-container #ytd-player video.html5-main-video"
   );
-  const primary = document.getElementById("primary-inner");
+  primary ??= document.getElementById("primary-inner");
   if (video && primary) {
     clearInterval(intervalID);
     heightObserver.observe(video, {
