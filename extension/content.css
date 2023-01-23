@@ -56,3 +56,7 @@
 .fixed_FixYTPlayer ytd-watch-flexy[theater] #columns {
   padding-top: clamp(480px, 56.25vw, calc(100vh - 169px));
 }
+
+.html5-video-container {
+  z-index: 40 !important;
+}
