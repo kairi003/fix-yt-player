@@ -35,14 +35,14 @@
 
 .fixed_FixYTPlayer #player-theater-container {
   position: fixed !important;
-  z-index: 10000;
+  z-index: 2010;
 }
 
 .fixed_FixYTPlayer #player {
   position: fixed !important;
   height: var(--fytp-player-height);
   width: var(--fytp-primary-colomn-width);
-  z-index: 10000;
+  z-index: 2010;
 }
 
 .fixed_FixYTPlayer #below {
