@@ -38,7 +38,7 @@
   z-index: 2010;
 }
 
-.fixed_FixYTPlayer #player {
+.fixed_FixYTPlayer #player-container-outer {
   position: fixed !important;
   height: var(--fytp-player-height);
   width: var(--fytp-primary-colomn-width);
